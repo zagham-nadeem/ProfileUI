@@ -11,6 +11,6 @@ An Open Sorce Profile UI with api's Integration
 
 ## Support
 
-For support, email zagham@learn2earnn.com.com or visit my Portfolio.
+For support, email zagham@learn2earnn.com or visit my Portfolio.
 [thedevils.me](www.thedevils.me)
 
