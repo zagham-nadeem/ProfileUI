@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" required [(ngModel)]="user.email" [ngModelOptions]="{standalone:true}"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required [(ngModel)]="user.password" [ngModelOptions]="{standalone:true}"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="login()" [disabled]="this.user.email == '' || this.user.password == ''" mode="ios" type="submit" color="primary" expand="block">Sign In</ion-button>
+        <ion-button mode="ios" color="danger" expand="block" [routerLink]="['/signup']" class="small-text">Signup</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
